@@ -4,6 +4,11 @@
   position: relative;
 }
 
+.headerContainer {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 .headerWrapper {
   display: flex;
   align-items: center;
@@ -21,6 +26,6 @@
   font-size: 12px;
   line-height: 16px;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.05em;
   margin-right: 32px;
 }

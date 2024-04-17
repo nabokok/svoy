@@ -1,0 +1,42 @@
+.buttonWrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 100px;
+  width: max-content;
+  height: max-content;
+}
+
+.button {
+  border: solid 2px var(--text-color);
+  border-radius: 100px;
+  padding: 20px;
+  width: 293px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.button::after {
+  content: '';
+  background: var(--orange-color);
+  border: solid 2px var(--orange-color);
+  width: 400px;
+  height: 400px;
+  border-radius: 100%;
+  position: absolute;
+  transform: translateY(100%);
+  transition: .9s;
+}
+
+.button:hover::after {
+  transform: translateY(0);
+
+}
+
+.button:hover > * {
+  z-index: 1;
+  color: var(--secondary-text-color);
+}

@@ -12,8 +12,23 @@ body {
   background-color: var(--body-color);
 }
 
+h2 {
+  font-family: 'Tenor Sans', serif;
+  font-weight: 400;
+  font-size: 115px;
+  line-height: 115px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin: 0;
+}
+
+button {
+  border: none;
+  background: none;
+}
+
 
 .container {
-  max-width: 1440px;
+  max-width: 1200px;
   margin: 0 auto;
 }
