@@ -1,0 +1,58 @@
+.select {
+  position: relative;
+}
+
+.selectHeader {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding-right: 15px;
+  position: relative;
+  cursor: pointer;
+}
+
+.selectHeader::after {
+  content: '';
+  background-image: url('/images/arrow-down.svg');
+  position: absolute;
+  width: 9px;
+  height: 5px;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: .3s;
+}
+
+.selectHeaderActive::after {
+  transform: translateY(-50%) rotate(-180deg);
+}
+
+.selectBody {
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  position: absolute;
+  transition: .3s;
+  padding: 0 10px;
+  top: 100%;
+  left: calc(50% - 7.5px);
+  transform: translateX(-50%);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.selectBodyActive {
+  opacity: 1;
+  height: auto;
+  padding: 10px;
+}
+
+.selectOption {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+}
