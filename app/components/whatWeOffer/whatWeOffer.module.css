@@ -1,0 +1,51 @@
+.whatWeOffer {
+  background-color: var(--orange-color);
+  position: relative;
+  padding-bottom: 132px;
+}
+
+.whatWeOfferWrapper {
+  display: flex;
+  position: relative;
+}
+
+.whatWeOfferText {
+  position: absolute;
+  right: 0;
+  top: 150px;
+  color: var(--secondary-text-color);
+  text-align: end;
+}
+
+.whatWeOfferImages {
+  position: relative;
+  display: flex;
+}
+
+.whatWeOfferSmallImage {
+  position: absolute;
+  right: -158px;
+  bottom: -59px;
+}
+
+.title {
+  padding-right: 138px;
+}
+
+.title:first-child {
+  padding-right: 180px;
+}
+
+.description {
+  text-align: start;
+  max-width: 386px;
+  margin-left: auto;
+  padding-right: 80px;
+  margin-top: 80px;
+}
+
+.button {
+  position: absolute;
+  bottom: -76px;
+  left: 51%;
+}

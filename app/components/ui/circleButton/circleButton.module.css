@@ -1,0 +1,12 @@
+.circleButton {
+  width: 180px;
+  height: 180px;
+  border: 1px solid var(--secondary-text-color);
+  border-radius: 50%;
+  cursor: pointer;
+  color: var(--secondary-text-color);
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 0.05em;
+}

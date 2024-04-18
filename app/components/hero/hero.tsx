@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import Button from '../ui/button/button';
 import GradientButton from '../ui/gradientButton/gradientButton';
 import styles from './hero.module.css';
@@ -7,7 +8,7 @@ function Hero() {
   return (
     <section className={styles.hero}>
       <div className="container">
-        <div>
+        <div className={styles.heroWrapper}>
           <div className={styles.linksWrapper}>
             <Link href="/" className={styles.link}>Rent</Link>
             <span>/</span>
@@ -23,6 +24,11 @@ function Hero() {
               <Button><Link href="/" className={styles.buttonLink}>Whole colection</Link></Button>
               <span className={styles.caption}>Real Estate Agency</span>
             </div>
+          </div>
+          <div className={styles.circleContainer}>
+            <div className={styles.animatedCircle}></div>
+            <div className={styles.animatedCircle}></div>
+            <div className={styles.animatedCircle}></div>
           </div>
         </div>
       </div>

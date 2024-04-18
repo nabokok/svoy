@@ -1,4 +1,3 @@
-
 .hero {
   font-family: 'Tenor Sans', serif;
   font-size: 115px;
@@ -6,6 +5,15 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   padding-top: 96px;
+}
+
+.heroWrapper {
+  padding-bottom: var(--hero-image-height);
+  background-image: url(/images/hero-img.png);
+  background-repeat: no-repeat;
+  background-size: auto var(--hero-image-height), cover;
+  background-position: center bottom;
+  position: relative;
 }
 
 .linksWrapper {
@@ -19,6 +27,7 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
+  margin-bottom: 152px;
 }
 
 .contentRow {
@@ -57,4 +66,115 @@
   position: absolute;
   top: 100%;
   left: 407px;
+}
+
+.circleContainer {
+  position: absolute;
+  left: 50%;
+  bottom: var(--hero-image-height)
+}
+
+.animatedCircle {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 1px solid transparent;
+}
+
+.circleContainer .animatedCircle:nth-child(1){
+  animation: growCircle1 1500ms infinite ease-in-out;
+}
+
+.circleContainer .animatedCircle:nth-child(2) {
+  animation: growCircle2 1500ms infinite ease-in-out;
+}
+
+.circleContainer .animatedCircle:nth-child(3) {
+  animation: growCircle3 1500ms infinite ease-in-out;
+}
+
+@keyframes growCircle1 {
+  0% {
+    width: 30px;
+    height: 30px;
+    border-width: 1px;
+    border-color: var(--orange-color);
+    opacity: 100%;
+  }
+  60% {
+    width: 30px;
+    height: 30px;
+    border-width: 1px;
+  }
+  60% {
+    opacity: 100%;
+    border-color: var(--orange-color);
+  }
+  100% {
+    width: 170px;
+    height: 170px;
+    border-width: 6px;
+    opacity: 0;
+    border-color: transparent;
+  }
+}
+
+@keyframes growCircle2 {
+  0% {
+    width: 30px;
+    height: 30px;
+    border-width: 0;
+    border-color: transparent;
+    opacity: 100%;
+  }
+  30% {
+    width: 30px;
+    height: 30px;
+    border-color: transparent;
+    border-width: 1px;
+  }
+  40% {
+    border-color: var(--orange-color);
+  }
+  60% {
+    opacity: 100%;
+    border-color: var(--orange-color);
+  }
+  100% {
+    width: 170px;
+    height: 170px;
+    border-width: 6px;
+    opacity: 0;
+    border-color: transparent;
+  }
+}
+
+@keyframes growCircle3 {
+  0% {
+    width: 30px;
+    height: 30px;
+    border-width: 0;
+    border-color: transparent;
+    opacity: 100%;
+  }
+  50% {
+    width: 30px;
+    height: 30px;
+    border-color: transparent;
+    border-width: 1px;
+  }
+  60% {
+    border-color: var(--orange-color);
+  }
+  60% {
+    opacity: 100%;
+    border-color: var(--orange-color);
+  }
+  100% {
+    width: 170px;
+    height: 170px;
+    border-width: 6px;
+    opacity: 0;
+    border-color: transparent;
+  }
 }
