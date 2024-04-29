@@ -6,7 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import LangSelect from "../LangSelect/LangSelect";
 import NavBar from "../NavBar/NavBar";
-import styles from "./header.module.css";
+import styles from "./Header.module.css";
 import MobileButton from "../ui/MobileButton/MobileButton";
 import BurgerIcon from "../ui/Icons/BurgerIcon/BurgerIcon";
 import PhoneIcon from "../ui/Icons/PhoneIcon/PhoneIcon";
