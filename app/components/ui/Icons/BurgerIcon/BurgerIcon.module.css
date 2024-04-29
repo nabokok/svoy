@@ -1,0 +1,43 @@
+.burgerWrapper {
+  width: 18px;
+  height: 11px;
+  position: relative;
+}
+
+.burgerWrapper span {
+  width: 100%;
+  height: 1px;
+  background-color: var(--icon-color);
+  border-radius: 1px;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  position: absolute;
+  transition: .3s;
+}
+
+.burgerWrapper span:nth-child(1) {
+  top: 0;
+}
+
+.burgerWrapper span:nth-child(3) {
+  top: 100%;
+}
+
+.isActive span {
+  background-color: var(--icon-active-color);
+}
+
+.isActive span:nth-child(2) {
+  opacity: 0;
+}
+
+.isActive span:nth-child(1) {
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.isActive span:nth-child(3) {
+  top: 50%;
+  transform: translateY(-50%) rotate(-45deg);
+}

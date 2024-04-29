@@ -1,8 +1,8 @@
-import Hero from "./components/hero/hero";
-import WhatWeOffer from "./components/whatWeOffer/whatWeOffer";
+import Hero from "./components/Hero/Hero";
+import WhatWeOffer from "./components/WhatWeOffer/WhatWeOffer";
 
 
-export default function Home() {
+const Home = () => {
   return (
     <main>
       <Hero />
@@ -10,3 +10,5 @@ export default function Home() {
     </main >
   );
 }
+
+export default Home;

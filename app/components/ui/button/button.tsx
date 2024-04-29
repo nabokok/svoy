@@ -1,11 +1,11 @@
 import { ReactNode } from 'react';
-import styles from './button.module.css'
+import styles from './Button.module.css'
 
 interface Props {
   children: ReactNode;
 }
 
-function Button({ children }: Props) {
+const Button = ({ children }: Props) => {
   return (
     <div className={styles.buttonWrapper}>
       <button className={styles.button}>

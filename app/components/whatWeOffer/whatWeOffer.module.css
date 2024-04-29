@@ -44,8 +44,57 @@
   margin-top: 80px;
 }
 
+.whatWeOfferLargeImage {
+  width: 75%;
+  height: auto;
+}
+
+.whatWeOfferSmallImage {
+  width: 50%;
+  height: auto;
+}
+
 .button {
   position: absolute;
   bottom: -76px;
   left: 51%;
+}
+
+
+@media screen and (max-width: 576px) {
+  .whatWeOffer {
+    padding-bottom: 60px;
+  }
+
+  .whatWeOfferWrapper {
+    flex-direction: column;
+    padding-top: 80px;
+  }
+
+  .whatWeOfferSmallImage {
+    right: 0;
+  }
+
+  .button {
+    position: static;
+    display: flex;
+    justify-content: center;
+  }
+
+  .whatWeOfferText {
+    position: relative;
+    text-align: start;
+    top: 0;
+    padding: 60px 26px;
+  }
+
+  .title {
+    padding-right: 0;
+  }
+
+  .description {
+    width: 100%;
+    margin-top: 24px;
+    padding: 0;
+  }
 }

@@ -2,13 +2,13 @@
 
 import React, { ReactNode, useRef } from 'react';
 import { gsap } from 'gsap';
-import styles from './circleButton.module.css';
+import styles from './CircleButton.module.css';
 
 interface Props {
   children: ReactNode;
 }
 
-function CircleButton({ children }: Props) {
+const CircleButton = ({ children }: Props) => {
   const buttonRef = useRef<HTMLButtonElement | null>(null);
   const textRef = useRef<HTMLDivElement | null>(null);
 

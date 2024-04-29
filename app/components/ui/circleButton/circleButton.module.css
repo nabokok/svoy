@@ -1,4 +1,6 @@
+
 .circleButton {
+  position: relative;
   width: 180px;
   height: 180px;
   border: 1px solid var(--secondary-text-color);
@@ -9,8 +11,43 @@
   font-weight: 600;
   font-size: 15px;
   letter-spacing: 0.05em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: transform 0.3s ease; 
+  transition: color 0.3s ease;
+}
+
+.circleButton::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: var(--secondary-text-color);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.4s ease-in, height 0.4s ease-in;
+}
+
+.circleButton:hover .textWrapper{
+  position: relative;
+  color: var(--orange-color); 
+  z-index: 10;
+}
+
+.circleButton:hover::after {
+  animation: growCircle 0.6s ease-in forwards;
+}
+
+@keyframes growCircle {
+  0% {
+    width: 0%; 
+    height: 0%; 
+  }
+  75% {
+    width: 115%; 
+    height: 115%; 
+  }
+  100% {
+    width: 100%; 
+    height: 100%; 
+  }
 }

@@ -1,11 +1,11 @@
 import { ReactNode } from 'react';
-import styles from './gradientButton.module.css'
+import styles from './GradientButton.module.css'
 
 interface Props {
   children: ReactNode;
 }
 
-function GradientButton({ children }: Props) {
+const GradientButton = ({ children }: Props) => {
   return (
     <div className={styles.buttonWrapper}>
       <button className={styles.gradientButton}>

@@ -1,0 +1,13 @@
+.mobileButton {
+  height: 50px;
+  min-width: 50px;
+  border: 2px solid var(--secondary-borer-color);
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.isActive {
+  background-color: var(--button-bg-color);
+}

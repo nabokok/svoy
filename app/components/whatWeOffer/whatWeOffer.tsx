@@ -1,8 +1,8 @@
 import Image from 'next/image';
-import styles from './whatWeOffer.module.css'
-import CircleButton from '../ui/circleButton/circleButton';
+import styles from './WhatWeOffer.module.css'
+import CircleButton from '../ui/CircleButton/CircleButton';
 
-function WhatWeOffer() {
+const WhatWeOffer = () => {
   return (
     <section className={styles.whatWeOffer}>
       <div className="container">
@@ -13,6 +13,7 @@ function WhatWeOffer() {
               src='/images/what-we-offer-1.jpeg'
               width="534"
               height="631"
+              className={styles.whatWeOfferLargeImage}
             />
             <Image
               alt='what-we-offer-1'

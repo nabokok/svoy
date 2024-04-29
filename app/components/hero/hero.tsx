@@ -1,10 +1,10 @@
 import Link from 'next/link';
-import Button from '../ui/button/button';
-import GradientButton from '../ui/gradientButton/gradientButton';
-import styles from './hero.module.css';
+import Button from '../ui/Button/Button';
+import GradientButton from '../ui/GradientButton/GradientButton';
+import styles from './Hero.module.css';
 
 
-function Hero() {
+const Hero = () => {
   return (
     <section className={styles.hero}>
       <div className="container">

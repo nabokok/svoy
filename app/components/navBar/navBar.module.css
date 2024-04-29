@@ -13,3 +13,22 @@
   letter-spacing: 0.05em;
   color: var(--text-color);
 }
+
+@media screen and (max-width: 576px) {
+  .navBar {
+    flex-direction: column;
+    width: 100%;
+    gap: 0;
+    padding-bottom: 60px;
+  }
+
+  .navLink {
+    font-size: 15px;
+    line-height: 19.5px;
+    letter-spacing: 0.1em;
+    border-bottom: 1px solid var(--border-color);
+    display: inline-block;
+    padding: 20px;
+    text-align: center;
+  }
+}

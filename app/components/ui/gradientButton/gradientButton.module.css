@@ -55,3 +55,19 @@
   z-index: 2;
   background-position: top left;
 }
+
+@media screen and (max-width: 576px) {
+  .buttonWrapper {
+    width: 100px;
+    height: 100px;
+  }
+  .gradientButton {
+    width: 100px;
+    height: 100px;
+  }
+
+  .gradientButton::after {
+    width: 100px;
+    height: 100px;
+  }
+}

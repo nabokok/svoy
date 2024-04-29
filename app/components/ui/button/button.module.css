@@ -40,3 +40,13 @@
   z-index: 1;
   color: var(--secondary-text-color);
 }
+
+@media screen and (max-width: 576px) {
+  .buttonWrapper {
+    width: 100%;
+  }
+
+  .button {
+    width: 100%;
+  }
+}

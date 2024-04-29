@@ -41,7 +41,26 @@ button {
   background: none;
 }
 
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+
+@media screen and (max-width: 576px) {
+  h2 {
+    font-size: 55px;
+    line-height: 55px;
+  }
+
+  h3 {
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  .container {
+    max-width: 390px;
+    margin: 0 auto;
+  }
 }

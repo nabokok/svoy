@@ -1,7 +1,7 @@
 import Link from "next/link";
-import styles from "./navBar.module.css"
+import styles from "./NavBar.module.css"
 
-function NavBar() {
+const NavBar = () => {
   return (
     <nav className={styles.navBar}>
       <Link href="/" className={styles.navLink}>Catalog</Link>

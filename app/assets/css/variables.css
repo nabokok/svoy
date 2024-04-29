@@ -1,5 +1,10 @@
 :root {
   --text-color: #2B2B2B;
+  --icon-color: #2B2B2B;
+  --icon-active-color: #FDF7EE;
+  --button-bg-color: #2B2B2B;
+  --border-color: rgba(43, 43, 43, .2);
+  --secondary-borer-color: #F1EADE;
   --body-color: #FDF7EE;
   --orange-color: #F6884D;
   --secondary-text-color: #FFFFFF;

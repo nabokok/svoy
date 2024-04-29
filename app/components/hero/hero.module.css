@@ -42,6 +42,27 @@
   letter-spacing: 0.03em;
 }
 
+.link {
+  position: relative;
+}
+
+.link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  width: 0;
+  height: 6px;
+  background-color: var(--orange-color);
+  transform-origin: left; 
+  transition: width .5s ease-in; 
+}
+
+
+.link:hover::after {
+  width: 100%; 
+}
+
 .link, .buttonLink {
   text-decoration: none;
   color: var(--text-color);
@@ -176,5 +197,39 @@
     border-width: 6px;
     opacity: 0;
     border-color: transparent;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .hero {
+    font-size: 55px;
+    line-height: 55px;
+    padding-top: 42px;
+  }
+
+  .caption {
+    left: auto;
+    right: 17px;
+    top: 55px;
+  }
+  
+  .contentRow {
+    flex-wrap: wrap;
+  }
+
+  .contentRow:first-child {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .contentRow:first-child .contentTitle {
+    white-space: normal;
+    width: min-content;
+  }
+
+  .contentRow:last-child > div {
+    margin-top: 60px;
   }
 }
