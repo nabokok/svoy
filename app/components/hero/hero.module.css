@@ -217,7 +217,7 @@
     flex-wrap: wrap;
   }
 
-  .contentRow:first-child {
+  .contentRow:first-child { 
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
